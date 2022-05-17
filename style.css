@@ -1,0 +1,165 @@
+
+body{
+    max-width: 100%;
+}
+.topnav img{
+    width: 100%;
+    height: 30px;
+    padding: 0px;
+    display: flex;
+    align-self: flex-start;
+}
+.topnav {
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #eb5757;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: white;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+#home{
+    height: 400px; 
+     background-image:url('../Work/glitz-cover.jpeg'); 
+     background-repeat: no-repeat;
+     background-size: cover;
+     padding-top: none;    
+}
+#home .icon_linkwhatsapp{
+    margin-left: 10px;
+    object-fit:scale-down;
+    height: 40px;
+    max-width: 50px;
+    align-content:flex-start ;
+    margin-top: 99px;
+    position: fixed;
+}
+h5{
+    color: aliceblue;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-top: 136px;
+    margin-left: 10px;
+    font-family: sans-serif;
+    font-weight :lighter; 
+}
+h1{
+    color: aliceblue;
+    font-size: 35px;
+    text-transform: uppercase;
+    padding-top: 70px;
+    padding-left: 50%;
+    font-family: sans-serif;
+}
+h2{
+    text-transform: uppercase;
+    color: #EB5757;
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+p{
+    font-family: monospace;
+    font-size: 14px;
+}
+img{
+    width: 100%;
+    padding-bottom: 10px;
+}
+#contact h2{
+    text-decoration: none;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.socialmedia{
+    display: flex;
+    align-self:flex-end;
+}
+.icon_linkinstagram{
+    background-color: linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);
+    padding-right: 10px;
+    padding-left: 20px;
+}
+.icon_linktwitter{
+    color:#1da1f2;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.icon_linkwhatsapp{
+    color:#25D366 ;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+footer{
+    background-color: white;
+    font-family:Montserrat ;
+}
+footer h4{
+    color: #EB5757;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 14px;
+    text-align: center;
+}
+footer a{
+    color: #1da1f2;
+    padding-left: 40%;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
